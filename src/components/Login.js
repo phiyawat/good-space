@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import {Grid,Row,Col,Image,FormGroup,Form,
         FormControl,Glyphicon,Button} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 import '../App.css'
 
+
 export default class Login extends Component {
+  buttonClicked () {
+    console.log('Button was clicked!')
+  }
     render() {
       return (
          <Grid>
@@ -27,8 +32,8 @@ export default class Login extends Component {
                 <FormControl type="password" />
               </Col>
             </FormGroup>
-            <Button>เข้าสู่ระบบ</Button> &nbsp;&nbsp;&nbsp;&nbsp;
-            <Button>สมัครสมาชิก</Button>
+            <Link to="/projectList"><Button onClick={this.buttonClicked}>เข้าสู่ระบบ</Button></Link> &nbsp;&nbsp;&nbsp;&nbsp;
+            <Link to="/register"><Button>สมัครสมาชิก</Button></Link>
           </Form>
           </Grid>
       )

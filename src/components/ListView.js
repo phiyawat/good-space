@@ -1,37 +1,68 @@
-import React, { Component } from 'react'
-import {Grid,Row,Col,Image,FormGroup,Form,
-        FormControl,Glyphicon,Button} from 'react-bootstrap'
-import '../App.css'
+import React, {Component} from 'react'
+import '../Sidebar.css'
+import {Link} from 'react-router-dom'
+import { Checkbox, Grid, Row, Col, Button, Glyphicon } from 'react-bootstrap'
 
 export default class ListView extends Component {
     render() {
-      return (
-         <Grid>
-          <Row className="show-grid">
-            <Col xs={12} xsOffset={2}>
-              <br/><br/>
-                <Image src="/img/index.jpg" circle />
-              <br/><br/>
-            </Col>
-          </Row>
-            <Form horizontal>
-              <FormGroup>
-                <Col sm={10}>
-                  ชื่อผู้ใช้งาน: <Glyphicon glyph="user" /> <br/>
-                  <FormControl type="email"/>
-                </Col>
-              </FormGroup>
-            <FormGroup>
-              <Col sm={10}>
-                รหัสผ่าน: &nbsp;&nbsp; <Glyphicon glyph="lock" /> <br/>
-                <FormControl type="password" />
-              </Col>
-            </FormGroup>
-            <Button>เข้าสู่ระบบ</Button> &nbsp;&nbsp;&nbsp;&nbsp;
-            <Button>สมัครสมาชิก</Button>
-          </Form>
-          </Grid>
-      )
+        return (
+              <div>
+                  <div className="sidenav">
+                    <a href="#about">logo</a>
+                    <a href="#services">ข้อมูลเด็ก</a>
+                    <Link to="/projectList">ย้อนกลับ</Link>
+                  </div>
+                  <div className="main">
+                  <Grid>
+                  <Row className="show-grid">
+                    <Col xs={12} md={8}>
+                      ตัวกรอง: &nbsp;
+                      <Checkbox inline><p class="font">อายุ</p></Checkbox>
+                      <Checkbox inline><p class="font">เพศ</p></Checkbox>
+                      <Checkbox inline><p class="font">สัญชาติ</p></Checkbox>
+                      <Checkbox inline><p class="font">ระดับการศึกษา</p></Checkbox>
+                    </Col>
+                    <br/><br/>
+                    &nbsp;&nbsp;<input type="text" placeholder="Search.."></input>
+                    <Button><Glyphicon glyph="search" /></Button>
+                    <br/><br/>
+                    <div className="container">           
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <th>รหัสเด็ก</th>
+                          <th>ชื่อ-นามสกุล</th>
+                          <th>อายุ</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                  <tr>
+                   <td>John</td>
+                   <td>Doe</td>
+                   <td>john@example.com</td>
+                   <td> <Button>ดูข้อมูล</Button> </td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                  <td> <Button>ดูข้อมูล</Button> </td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                  <td> <Button>ดูข้อมูล</Button> </td>
+                </tr>
+                </tbody>
+                </table>
+                </div>
+                  </Row>
+                  </Grid>
+                  </div>
+              </div>
+        )
     }
-  }
+}
+ 
   
