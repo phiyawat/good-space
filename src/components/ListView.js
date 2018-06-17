@@ -1,15 +1,16 @@
 import React, {Component} from 'react'
 import '../Sidebar.css'
 import {Link} from 'react-router-dom'
-import { Checkbox, Grid, Row, Col, Button, Glyphicon } from 'react-bootstrap'
+import { Checkbox, Grid, Row, Col, Button, Glyphicon, Image, FormControl } from 'react-bootstrap'
 
 export default class ListView extends Component {
     render() {
         return (
               <div>
                   <div className="sidenav">
-                    <a href="#about">logo</a>
+                    <Image src="/img/index.jpg" />
                     <a href="#services">ข้อมูลเด็ก</a>
+                    <Link to="/vaccine">วัคซีน</Link>
                     <Link to="/projectList">ย้อนกลับ</Link>
                   </div>
                   <div className="main">
@@ -23,7 +24,10 @@ export default class ListView extends Component {
                       <Checkbox inline><p class="font">ระดับการศึกษา</p></Checkbox>
                     </Col>
                     <br/><br/>
-                    &nbsp;&nbsp;<input type="text" placeholder="Search.."></input>
+                    &nbsp;&nbsp;
+                    <Col xs={12} md={8}>
+                    <FormControl placeholder="Search.." type="text"/>
+                    </Col>
                     <Button><Glyphicon glyph="search" /></Button>
                     <br/><br/>
                     <div className="container">           
@@ -37,21 +41,21 @@ export default class ListView extends Component {
                       </thead>
                     <tbody>
                   <tr>
-                   <td>John</td>
-                   <td>Doe</td>
-                   <td>john@example.com</td>
+                   <td>31796</td>
+                   <td>กิดจุง จุง</td>
+                   <td>7</td>
                    <td> <Button>ดูข้อมูล</Button> </td>
                 </tr>
                 <tr>
-                  <td>Mary</td>
-                  <td>Moe</td>
-                  <td>mary@example.com</td>
+                  <td>48002</td>
+                  <td>อนุชิต มาธาวี</td>
+                  <td>10</td>
                   <td> <Button>ดูข้อมูล</Button> </td>
                 </tr>
                 <tr>
-                  <td>July</td>
-                  <td>Dooley</td>
-                  <td>july@example.com</td>
+                  <td>23012</td>
+                  <td> สิรภพ สวัสดิ์บุญ</td>
+                  <td>7</td>
                   <td> <Button>ดูข้อมูล</Button> </td>
                 </tr>
                 </tbody>

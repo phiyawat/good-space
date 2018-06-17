@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import { Button, FormGroup, ControlLabel, 
         FormControl, Form, Col, } from 'react-bootstrap'
@@ -20,7 +20,7 @@ export default class Register extends Component {
                     ชื่อ-นามสกุล
                   </Col>
                   <Col sm={8}>
-                    <FormControl type="text" placeholder="กรุณากรอกชื่อ-นามสกุล" />
+                    <FormControl name="name_lastname" type="text" placeholder="กรุณากรอกชื่อ-นามสกุล" />
                   </Col>
                 </FormGroup>
 
@@ -29,7 +29,7 @@ export default class Register extends Component {
                     ชื่อผู้ใช้งาน
                   </Col>
                   <Col sm={8}>
-                    <FormControl type="text" placeholder="กรุณากรอกชื่อผู้ใช้งาน" />
+                    <FormControl name="username" type="text" placeholder="กรุณากรอกชื่อผู้ใช้งาน" />
                   </Col>
                 </FormGroup>
 
@@ -38,7 +38,7 @@ export default class Register extends Component {
                     อีเมล
                   </Col>
                   <Col sm={8}>
-                    <FormControl type="email" placeholder="กรุณากรอก Email" />
+                    <FormControl name="E-mail"  type="email" placeholder="กรุณากรอก Email" />
                   </Col>
                 </FormGroup>
 
@@ -47,13 +47,13 @@ export default class Register extends Component {
                     รหัสผ่าน
                   </Col>
                   <Col sm={8}>
-                    <FormControl type="password" placeholder="กรุณากรอกรหัสผ่าน" />
+                    <FormControl type="password" name="password" placeholder="กรุณากรอกรหัสผ่าน" />
                   </Col>
                 </FormGroup>
 
                 <FormGroup className='App'>
                   <Col smOffset={2} sm={8}>
-                  <Link to="/"><Button >สมัครสมาชิก</Button></Link>
+                  <Link to="/"><Button>สมัครสมาชิก</Button></Link>
                   </Col>
                 </FormGroup>
               </Form>

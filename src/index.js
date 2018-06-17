@@ -7,8 +7,9 @@ import ListView from './components/ListView'
 import AddProject from './components/AddProject'
 import App from './App';
 import registerServiceWorker from './registerServiceWorker'
-
+import Vaccine from './components/Vaccine';
 import './index.css';
+
 
 ReactDOM.render(
 <Router>
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route path="/projectList" component={ProjectList}/>
         <Route path="/listView" component={ListView}/>
         <Route path="/addProject" component={AddProject}/>
+        <Route path="/vaccine" component={Vaccine}/>
     </div>
 </Router>, document.getElementById('root')
 );

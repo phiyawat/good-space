@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Label,Button} from 'react-bootstrap'
+import {Label,Button,Image} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import '../ProjectList.css'
 
@@ -12,8 +12,8 @@ export default class ProjectList extends Component {
             <Link to="/addProject">เพิ่มโครงการ</Link>
             <Link to="/">ออกจากระบบ</Link>
           </div>
-        <Label className='main'>รายชื่อโครงการ</Label>
-        <Link to="/listView"><Button >ข้อมูลเด็ก</Button></Link>
+          <Label className='main'>รายชื่อโครงการ</Label>
+          <Link to="/listView"> <Image className="center" src="/img/index.jpg" /></Link>
       </div>
     );
   }
