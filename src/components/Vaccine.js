@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import '../Vaccine.css';
-import { DropdownButton, MenuItem, Button, ButtonToolbar, FormGroup, Panel, 
-        Row, Grid, Form, render, Dropdown, FormControl, CustomToggle, Col, 
-        ControlLabel, Combobox, Alert } from 'react-bootstrap'
+import { Button, FormGroup, Panel, 
+        Row, Grid, Form, Col } from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import { ReactDOM } from 'react-dom'
 
 export default class Vaccine extends Component { 
   

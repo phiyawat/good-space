@@ -4,7 +4,7 @@ import { Button, FormGroup, ControlLabel,
         FormControl, Form, Col, } from 'react-bootstrap'
 import '../Regis.css';
 
-export default class Register extends Component { 
+export default class Register extends Component {
 
   render() {
     return (
@@ -57,6 +57,7 @@ export default class Register extends Component {
                   </Col>
                 </FormGroup>
               </Form>
+              
         </div>
         </p>
     </div>

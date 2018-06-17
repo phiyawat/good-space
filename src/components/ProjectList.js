@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Label,Button,Image} from 'react-bootstrap'
+import {Label,Image} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import '../ProjectList.css'
 
