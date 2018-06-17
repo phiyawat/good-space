@@ -1,0 +1,45 @@
+{ 
+    "_id" : ObjectId("5b24f9135eb0810299a1275b"), 
+    "e_id" : "e1001", 
+    "e_name" : "สมาน สาลาก", 
+    "e_phone" : "0801234567", 
+    "e_labor" : "ช่างไม้", 
+    "e_nationality" : "พม่า", 
+    "e_address" : "กรุงเทพฯ"
+}
+{ 
+    "_id" : ObjectId("5b256c46cf7b813284a20840"), 
+    "e_id" : "e1002", 
+    "e_name" : "สลอง สอนจง", 
+    "e_phone" : "0901234567", 
+    "e_labor" : "ช่างปูน", 
+    "e_nationality" : "ลาว", 
+    "e_address" : "นนทบุรี"
+}
+{ 
+    "_id" : ObjectId("5b256c51cf7b813284a20841"), 
+    "e_id" : "e1003", 
+    "e_name" : "ปราโมท ดาลมา", 
+    "e_phone" : "0601234567", 
+    "e_labor" : "ช่างปูน", 
+    "e_nationality" : "พม่า", 
+    "e_address" : "ธนบุรี"
+}
+{ 
+    "_id" : ObjectId("5b256c56cf7b813284a20842"), 
+    "e_id" : "e1004", 
+    "e_name" : "หารสัง ใยจง", 
+    "e_phone" : "0812345678", 
+    "e_labor" : "ช่างปูน", 
+    "e_nationality" : "พม่า", 
+    "e_address" : "พระนครศรีฯ"
+}
+{ 
+    "_id" : ObjectId("5b256c61cf7b813284a20843"), 
+    "e_id" : "e1005", 
+    "e_name" : "ผสาน สวนดี", 
+    "e_phone" : "0612345678", 
+    "e_labor" : "ช่างไม้", 
+    "e_nationality" : "เขมร", 
+    "e_address" : "สีลม"
+}

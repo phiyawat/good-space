@@ -1,0 +1,35 @@
+{ 
+    "_id" : ObjectId("5b256aa7cf7b813284a207ff"), 
+    "username" : "Admin", 
+    "password" : "AdminSansiri", 
+    "name_lastname" : "แสนสิริ แสนสุข", 
+    "E-mail" : "Sansiri@mail.com"
+}
+{ 
+    "_id" : ObjectId("5b257a89cf7b813284a20a00"), 
+    "username" : "Orathai", 
+    "name_lastname" : "อรทัย ศรีงาม", 
+    "E-mail" : "Orathai@mail.com", 
+    "password" : "Sringam"
+}
+{ 
+    "_id" : ObjectId("5b257a8dcf7b813284a20a01"), 
+    "username" : "Anan", 
+    "name_lastname" : "อนันต์ มานาน", 
+    "E-mail" : "Anan@mail.com", 
+    "password" : "Manan"
+}
+{ 
+    "_id" : ObjectId("5b257a94cf7b813284a20a02"), 
+    "username" : "Worasa", 
+    "name_lastname" : "วรสา หวานเกิด", 
+    "E-mail" : "Worasa@mail.com", 
+    "password" : "Wankerd"
+}
+{ 
+    "_id" : ObjectId("5b257a98cf7b813284a20a03"), 
+    "username" : "Nathee", 
+    "name_lastname" : "นที สุดใจ", 
+    "E-mail" : "Nathee@mail.com", 
+    "password" : "Sudjai"
+}
